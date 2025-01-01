@@ -15,31 +15,23 @@
   margin: 0;
 }
 
-.header-logo {
+.header-logo,
+.header-menu,
+.header-shopping {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .header-logo img {
   height: 3rem;
 }
 
-.header-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .header-menu ul li a {
   font-family: var(--main-font);
   font-weight: light;
   font-size: 1rem;
-}
-
-.header-shopping {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .header-shopping button:hover {
@@ -202,6 +194,34 @@
 .google-map iframe {
   width: 600px;
   height: 300px;
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-collapse {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.accordion-collapse.show {
+  height: auto;
+}
+
+.accordion-body {
+  padding: 1rem;
 }
 
 @media screen and (max-width: 768px) {
