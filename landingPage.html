@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Suplexum Clone</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <div class="container header-container">
+      <div class="header row">
+        <div class="col-md-4 header-logo">
+          <img
+            src="https://www.suplexum.com/wp-content/uploads/2024/10/Suplexum-Brand-100pix.png"
+            alt=""
+          />
+        </div>
+        <div class="col-md-5 header-menu">
+          <nav class="navbar navbar-expand-lg" role="navigation">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 fw-medium collapse navbar-collapse"
+                id="navbarNav"
+              >
+                <li class="nav-item fs-5 mx-4">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item fs-5 mx-4">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Shop</a
+                  >
+                </li>
+                <li class="nav-item fs-5 mx-4">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Login|Register</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-1 divider"></div>
+        <div class="col-md-2 header-shopping">
+          <button
+            class="btn btn-dark px-4 rounded-0 navigation-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <i class="fa-solid fa-cart-shopping fa-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+      style="width: 20%"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body content">
+        <p>No products in the cart</p>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- slide start -->
+    <div class="container-fluid slide-container">
+      <div class="container-slide" id="box">
+        <div class="slide-container-overlay"></div>
+        <div class="images">
+          <img
+            src="https://www.suplexum.com/wp-content/uploads/2024/11/3-Bottles-Large-PNG-Optimized-copy.webp"
+            alt="Medicine Bottle"
+            class="bottle"
+          />
+        </div>
+        <h1 class="text">Your Eyes Deserve The Best</h1>
+      </div>
+    </div>
+
+    <!-- slide end -->
+    <!-- divider start -->
+    <div class="line"></div>
+    <!-- divider end -->
+    <!-- product start -->
+    <div class="container mt-2 mb-5">
+      <div class="row product-container">
+        <div class="col-md-4 product-pic">
+          <img
+            src="https://www.suplexum.com/wp-content/uploads/2024/11/RH-Bottle-Front-Large-Webp.webp"
+            alt=""
+          />
+        </div>
+        <div class="col-md-8 product-detail">
+          <div class="row mt-5 ms-5">
+            <div class="col-md-12 mt-8 product-img">
+              <span
+                ><img
+                  src="https://www.suplexum.com/wp-content/uploads/2024/10/Rh-Retinal-Health-Transparency-1.png"
+                  alt=""
+              /></span>
+            </div>
+            <div class="col-md-12 product-name">
+              <a href="#" class="text-decoration-none text-dark"
+                ><span class="fw-bolder fs-4"
+                  >AREDS-2 Based Formulation For Macular Health</span
+                ></a
+              >
+            </div>
+            <div class="col-md-12 product-price">
+              <span class="fw-bolder fs-4" style="color: #837566">$ 46.95</span>
+            </div>
+            <div class="col-md-12 product-button">
+              <button type="button" class="btn btn-dark px-4 rounded-1">
+                Purchase<br />
+                One Time
+              </button>
+            </div>
+            <div class="col-md-12">
+              <div class="card rounded-0 w-100">
+                <div
+                  class="card-header d-flex justify-content-center align-items-cente border border-black"
+                >
+                  <p class="mb-0 fs-4">AutoShip Savings</p>
+                </div>
+                <div class="card-body border border-black">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label
+                      class="form-check-label product-info"
+                      for="flexRadioDefault1"
+                    >
+                      10% Discount, 1 bottle shipped monthly ($42.26/bottle)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label
+                      class="form-check-label product-info"
+                      for="flexRadioDefault2"
+                    >
+                      20% Discount, 3 bottles shipped every 3 months
+                      ($35.21/bottle)
+                    </label>
+                  </div>
+                  <button type="button" class="btn btn-primary px-5 rounded-1">
+                    Purchase <br />
+                    Subscription
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 mt-2">
+              <hr />
+            </div>
+            <div class="col-md-12 mt-2">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item mb-2 border-0 mb-2 rounded-0">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button text-uppercase"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      DESCRITPTION
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Discover superior eye care with Suplexums Retinal
+                        Healththe doctor-developed AREDS II supplement that goes
+                        beyond the basics. Enhanced with bilberry for increased
+                        antioxidant effects and fortified with extra lutein and
+                        zeaxanthin, our proprietary formula delivers unrivaled
+                        clinical effectiveness to support macular health.
+                        Available only through top eye doctors, Retinal Health
+                        is your ultimate choice for your eyes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-2 rounded-0">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-light text-uppercase"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      SUGGESTED USE
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        As a dietary supplement, take two (2) capsules once
+                        daily, preferably with a meal or directed by your
+                        healthcare professional
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-2 rounded-0">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-light text-uppercase"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      INGREDIENTS
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <img
+                        src="https://www.suplexum.com/wp-content/uploads/2024/10/Untitled.webp"
+                        style="width: 550px; height: 740px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product end -->
+    <!-- questions start -->
+    <div class="container mt-2 mb-5 questions">
+      <div class="row questions-container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-transperant collapsed d-flex justify-content-center align-items-center"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse"
+                    aria-expanded="false"
+                    aria-controls="flush-collapse"
+                  >
+                    <p class="text-bold fs-1 fw-semibold">
+                      Frequently Asked Questions
+                    </p>
+                  </button>
+                </h2>
+              </div>
+            </div>
+
+            <div class="row questions-button">
+              <div
+                id="flush-collapse"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion">
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                        >
+                          What is Retinal Health?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample-1"
+                      >
+                        <div class="accordion-body">
+                          Retinal Health is an advanced AREDS II-based eye
+                          health supplement developed by eye doctors. It is
+                          designed to support macular health and protect against
+                          age-related macular degeneration (AMD).
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
+                        >
+                          What is Retinal Health?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample-2"
+                      >
+                        <div class="accordion-body">
+                          Retinal Health is an advanced AREDS II-based eye
+                          health supplement developed by eye doctors. It is
+                          designed to support macular health and protect against
+                          age-related macular degeneration (AMD).
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
+                        >
+                          What is Retinal Health?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample-3"
+                      >
+                        <div class="accordion-body">
+                          Retinal Health is an advanced AREDS II-based eye
+                          health supplement developed by eye doctors. It is
+                          designed to support macular health and protect against
+                          age-related macular degeneration (AMD).
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-12 d-flex justify-content-center align-items-center"
+              style="height: 100px"
+            >
+              <button
+                type="button"
+                class="btn btn-dark px-5"
+                data-bs-target="#flush-collapse"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="flush-collapse"
+              >
+                <span>Click Here</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- questions end -->
+    <!-- review start -->
+    <div class="container-fluid mt-2 mb-5">
+      <div class="row review-container">
+        <div class="col-md-12" style="background-color: #3da0cc; height: 350px">
+          <div class="row h-100">
+            <div
+              class="col-md-12 d-flex justify-content-center align-items-center flex-column review"
+            >
+              <p class="fs-1 text-white mb-0">How Can We Help</p>
+              <p class="fs-4 text-white mb-0">Send us a message</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- review end -->
+    <!-- form start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div class="mb-3 form-label">
+            <input
+              type="text"
+              class="form-control border border-black rounded-0"
+              id="exampleFormControlInput1"
+              placeholder="Name"
+            />
+          </div>
+          <div class="mb-3 form-label">
+            <input
+              type="text"
+              class="form-control border border-black rounded-0"
+              id="exampleFormControlInput1"
+              placeholder="Phone"
+            />
+          </div>
+          <div class="mb-3 form-label">
+            <input
+              type="email"
+              class="form-control border border-black rounded-0"
+              id="exampleFormControlInput1"
+              placeholder="Email"
+            />
+          </div>
+          <div class="mb-3 form-label">
+            <textarea
+              class="form-control border border-black"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <button
+              class="btn text-white px-5 rounded-1"
+              style="background-color: #3da0cc"
+            >
+              Submit <i class="fa-brands fa-telegram text-white"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122787.35448709683!2d108.14679210719777!3d15.903578134482318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420566c864fa3d%3A0xc35fbe6c722dc73b!2zxJBp4buHbiBCw6BuLCBRdeG6o25nIE5hbSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1734426432959!5m2!1svi!2s"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <span>Interstat LLC</span>
+          <br />
+          <span>White Plains, NY 10601</span>
+          <br />
+          <a href="email@gmail.com" class="text-decoration-none text-dark"
+            >email@gmail.com</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- form end -->
+    <!-- footer start -->
+    <footer class="bd-footer py-1 border border-top mt-5">
+      <div class="container text-body-secondary">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-md-5">
+            <span>Copyright @2024</span>
+            <br />
+            <span>All Rights Reserved</span>
+          </div>
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a class="text-decoration-none text-dark" href="#" cl
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none text-dark" href="#">FAQs</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none text-dark" href="#">Blog</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none text-dark" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js"></script>
+  </body>
+</html>
