@@ -224,6 +224,11 @@
   padding: 1rem;
 }
 
+.ingredients-img img {
+  width: 550px;
+  height: 740px;
+}
+
 @media screen and (max-width: 768px) {
   body {
     display: flex;
@@ -266,5 +271,10 @@
 
   .google-map iframe {
     width: 100%;
+  }
+
+  .ingredients-img img {
+    width: 100%;
+    height: auto;
   }
 }
