@@ -61,6 +61,7 @@
 }
 
 .slide-container {
+  padding: 3rem;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
@@ -75,7 +76,7 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
   width: 160%;
-  height: 100%;
+  height: 125%;
 }
 
 .container-slide {
@@ -282,5 +283,22 @@
   .product-pic img {
     width: 100%;
     height: auto;
+  }
+
+  .slide-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-image: url(https://www.suplexum.com/wp-content/uploads/2024/10/bilberry-6991287-scaled.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .slide-container-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 118%;
   }
 }
