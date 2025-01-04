@@ -1,4 +1,4 @@
-* {
+|* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -272,6 +272,18 @@
       right: 14%;
     }
   }
+
+  .product-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
   .questions-title {
     padding-left: 15%;
   }
@@ -281,6 +293,11 @@
   }
 
   .product-pic img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ingredients-img img {
     width: 100%;
     height: auto;
   }
@@ -300,5 +317,10 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
     height: 118%;
+  }
+
+  .footer-container {
+    width: 100%;
+    text-align: center;
   }
 }
