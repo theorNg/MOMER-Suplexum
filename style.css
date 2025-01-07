@@ -324,3 +324,73 @@
     text-align: center;
   }
 }
+
+.questions .accordion-button::after {
+  display: inline-block !important;
+  transition: transform 0.3s ease;
+}
+
+.questions .accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+}
+
+.questions-title .accordion-button::after {
+  display: none !important;
+}
+
+.questions .accordion-button {
+  padding: 1rem 1.25rem;
+  font-family: var(--main-font);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.accordion-collapse {
+  transition: all 0.3s ease-in-out !important;
+}
+
+.questions .accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.questions .accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #000;
+}
+
+.questions .accordion-body {
+  padding: 1rem 1.25rem;
+  font-family: var(--sub-font);
+  color: #666;
+  line-height: 1.6;
+}
+
+.product-price-purchase {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-button {
+  display: flex;
+  gap: 1rem;
+}
+
+.product-button .btn-subscription {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 767.68px) {
+  .product-price-purchase {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .product-button {
+    flex-direction: column;
+  }
+}

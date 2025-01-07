@@ -154,19 +154,22 @@
                 ></a
               >
             </div>
-            <div class="col-lg-12 product-price">
-              <span class="fw-bolder fs-4" style="color: #837566">$ 46.95</span>
-            </div>
-            <div class="col-lg-12 product-button">
-              <button type="button" class="btn btn-dark px-4 rounded-1">
-                Purchase<br />
-                One Time
-              </button>
+            <div class="product-price-purchase">
+              <div class="product-price">
+                <span class="fw-bolder fs-4" style="color: #837566"
+                  >$ 46.95</span
+                >
+              </div>
+              <div class="product-button">
+                <button type="button" class="btn btn-dark px-4 rounded-1">
+                  Purchase One Time
+                </button>
+              </div>
             </div>
             <div class="col-lg-12">
               <div class="card rounded-0 w-100">
                 <div
-                  class="card-header d-flex justify-content-center align-items-cente border border-black"
+                  class="card-header d-flex justify-content-center align-items-center border border-black"
                 >
                   <p class="mb-0 fs-4">AutoShip Savings</p>
                 </div>
@@ -200,7 +203,10 @@
                       ($35.21/bottle)
                     </label>
                   </div>
-                  <button type="button" class="btn btn-primary px-5 rounded-1">
+                  <button
+                    type="button"
+                    class="btn btn-primary px-4 rounded-1 btn-subscription"
+                  >
                     Purchase <br />
                     Subscription
                   </button>
@@ -307,8 +313,9 @@
     <!-- questions start -->
     <div class="container mt-2 mb-5 questions">
       <div class="row questions-container">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion accordion-flush" id="mainAccordion">
           <div class="accordion-item">
+            <!-- Main FAQ Title -->
             <div class="row">
               <div class="col-lg-12">
                 <h2 class="accordion-header questions-title">
@@ -328,99 +335,334 @@
               </div>
             </div>
 
+            <!-- FAQ Items Container -->
             <div class="row questions-button">
               <div
                 id="flush-collapse"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
+                data-bs-parent="#mainAccordion"
               >
-                <div class="accordion">
-                  <div
-                    class="accordion accordion-flush"
-                    id="accordionFlushExample"
-                  >
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseOne"
-                          aria-expanded="false"
-                          aria-controls="flush-collapseOne"
-                        >
-                          What is Retinal Health?
-                        </button>
-                      </h2>
-                      <div
-                        id="flush-collapseOne"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample-1"
+                <!-- Inner Accordion for FAQ Items -->
+                <div class="accordion" id="faqAccordion">
+                  <!-- FAQ Item 1 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-1"
+                        aria-expanded="false"
+                        aria-controls="faq-1"
                       >
-                        <div class="accordion-body">
-                          Retinal Health is an advanced AREDS II-based eye
-                          health supplement developed by eye doctors. It is
-                          designed to support macular health and protect against
-                          age-related macular degeneration (AMD).
-                        </div>
+                        What is Retinal Health?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-1"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Retinal Health is an advanced AREDS II-based eye health
+                        supplement developed by eye doctors. It is designed to
+                        support macular health and protect against age-related
+                        macular degeneration (AMD).
                       </div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="flush-collapseTwo"
-                        >
-                          What is Retinal Health?
-                        </button>
-                      </h2>
-                      <div
-                        id="flush-collapseTwo"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample-2"
+                  </div>
+
+                  <!-- FAQ Item 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-2"
+                        aria-expanded="false"
+                        aria-controls="faq-2"
                       >
-                        <div class="accordion-body">
-                          Retinal Health is an advanced AREDS II-based eye
-                          health supplement developed by eye doctors. It is
-                          designed to support macular health and protect against
-                          age-related macular degeneration (AMD).
-                        </div>
+                        What makes Retinal Health different from other AREDS II
+                        supplements?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Retinal Health includes increased concentrations of
+                        lutein and zeaxanthin, as well as bilberry, a powerful
+                        antioxidant known for supporting retinal health and
+                        improving blood flow to the eyes.
                       </div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseThree"
-                          aria-expanded="false"
-                          aria-controls="flush-collapseThree"
-                        >
-                          What is Retinal Health?
-                        </button>
-                      </h2>
-                      <div
-                        id="flush-collapseThree"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample-3"
+                  </div>
+
+                  <!-- FAQ Item 3 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-3"
+                        aria-expanded="false"
+                        aria-controls="faq-3"
                       >
-                        <div class="accordion-body">
-                          Retinal Health is an advanced AREDS II-based eye
-                          health supplement developed by eye doctors. It is
-                          designed to support macular health and protect against
-                          age-related macular degeneration (AMD).
-                        </div>
+                        What are lutein and zeaxanthin, and why are they
+                        important?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Lutein and zeaxanthin are essential carotenoids found in
+                        the retina that help protect your eyes from harmful blue
+                        light and oxidative stress. Increased levels in Retinal
+                        Health provide stronger support for macular health.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 4 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-4"
+                        aria-expanded="false"
+                        aria-controls="faq-4"
+                      >
+                        Why is bilberry included in the formulation?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-4"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Bilberry is rich in antioxidants that support retinal
+                        health and help maintain healthy blood flow to the eyes.
+                        It complements the other ingredients in Retinal Health
+                        to provide comprehensive support for eye health.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 5 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-5"
+                        aria-expanded="false"
+                        aria-controls="faq-5"
+                      >
+                        Who should take Retinal Health?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-5"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Retinal Health is recommended for individuals concerned
+                        about their eye health, especially those with
+                        age-related macular degeneration (AMD) or those looking
+                        to support their macular health proactively.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 6 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-6"
+                        aria-expanded="false"
+                        aria-controls="faq-6"
+                      >
+                        How is Retinal Health taken?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-6"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        The recommended dosage for Retinal Health is [insert
+                        dosage], taken daily with a meal, or as directed by your
+                        healthcare provider.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 7 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-7"
+                        aria-expanded="false"
+                        aria-controls="faq-7"
+                      >
+                        Is Retinal Health available over-the-counter?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-7"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        No, Retinal Health is only available through licensed
+                        eye doctors to ensure that it is used as part of a
+                        comprehensive eye care plan.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 8 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-8"
+                        aria-expanded="false"
+                        aria-controls="faq-8"
+                      >
+                        Can Retinal Health be taken with other medications?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-8"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        While Retinal Health is generally safe, we recommend
+                        consulting with your eye doctor or healthcare provider
+                        before starting any new supplement, especially if you
+                        are taking medications or have a medical condition.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 9 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-9"
+                        aria-expanded="false"
+                        aria-controls="faq-9"
+                      >
+                        Is Retinal Health FDA-approved?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-9"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        As a dietary supplement, Retinal Health is manufactured
+                        in compliance with FDA regulations, but dietary
+                        supplements are not individually approved by the FDA.
+                        However, the ingredients in Retinal Health are generally
+                        recognized as safe and used widely in eye health
+                        supplements.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 10 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-10"
+                        aria-expanded="false"
+                        aria-controls="faq-10"
+                      >
+                        Can Retinal Health prevent or cure AMD?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-10"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Retinal Health is designed to support eye health and
+                        reduce the risk of AMD progression, but it is not a cure
+                        or treatment for AMD. It should be used as part of an
+                        overall approach to managing your eye health under the
+                        guidance of your eye care professional.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 11 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq-11"
+                        aria-expanded="false"
+                        aria-controls="faq-11"
+                      >
+                        Where can I purchase Retinal Health supplement by
+                        Suplexum?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq-11"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Retinal Health is available exclusively through eye care
+                        professionals to ensure that it complements your
+                        personalized eye health plan. For your convenience, you
+                        can also order it directly from our website with the
+                        recommendation of your doctor. This ensures you continue
+                        to receive top-quality care and the best possible
+                        support for your eye health.
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Click Here Button -->
             <div
               class="col-lg-12 d-flex justify-content-center align-items-center"
               style="height: 100px"
